@@ -3,22 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ofertas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7fa;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        header h1 {
+            color: #d85b8a;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #777;
+        }
+
+        .busca {
+            padding: 15px 20px;
+        }
+
+        .busca input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #eee;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+
+        .categorias {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 5px 20px 20px;
+        }
+
+        .categoria {
+            background: white;
+            border: 1px solid #f1c4d5;
+            color: #d85b8a;
+            padding: 10px 16px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        main {
+            padding: 0 20px 30px;
+        }
+
+        .titulo {
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 15px;
+            padding: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .produto .imagem {
+            height: 130px;
+            background: #fce8f0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .produto h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .preco {
+            color: #d85b8a;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .botao {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #d85b8a;
+            color: white;
+            padding: 11px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: white;
+            text-align: center;
+            padding: 25px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
+<header>
     <h1>🛍️ Ofertas</h1>
+    <p>Produtos incríveis por preços especiais 💕</p>
+</header>
 
-    <p>Encontre produtos e ofertas que valem a pena!</p>
+<div class="busca">
+    <input type="text" placeholder="🔎 O que você está procurando?">
+</div>
 
-    <h2>🔥 Ofertas em destaque</h2>
+<div class="categorias">
+    <div class="categoria">🔥 Ofertas</div>
+    <div class="categoria">💄 Beleza</div>
+    <div class="categoria">🏠 Casa</div>
+    <div class="categoria">📱 Eletrônicos</div>
+    <div class="categoria">👗 Moda</div>
+</div>
 
-    <div>
-        <h3>Produto em destaque</h3>
-        <p>Confira esta oferta!</p>
-        <button>Ver oferta</button>
+<main>
+
+    <h2 class="titulo">🔥 Ofertas em destaque</h2>
+
+    <div class="produtos">
+
+        <div class="produto">
+            <div class="imagem">🛍️</div>
+
+            <h3>Produto em destaque</h3>
+
+            <div class="preco">R$ 49,90</div>
+
+            <a href="#" class="botao">Ver oferta</a>
+        </div>
+
+        <div class="produto">
+            <div class="imagem">✨</div>
+
+            <h3>Oferta especial</h3>
+
+            <div class="preco">R$ 79,90</div>
+
+            <a href="#" class="botao">Ver oferta</a>
+        </div>
+
     </div>
 
+</main>
+
+<footer>
+    <p>💕 Encontre ofertas que valem a pena!</p>
+    <p>© 2026 Ofertas</p>
+</footer>
+
 </body>
-</html>
+    </html>
